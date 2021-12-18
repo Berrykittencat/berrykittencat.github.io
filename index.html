@@ -8,15 +8,46 @@
     <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="semantic/semantic.min.js"></script>
+    <script src="components/header.js"></script>
 </head>
 <body>
-    <div class="ui container">
-        <h1 class="ui header">Vakantiepark X</h1>
-        <div class="ui piled segment">
-            <h4 class="ui header">Eerste Informatie</h4>
-            <p>Dit Vakantiepark is het beste dat je kan vinden in Nederland. Veel beter dan centerparcs!</p>
-            <a class="ui button" href="plattegrond.html">Plattegrond</a>
+    <nav-header page="0"></nav-header>
+
+    <div>
+        <div class="ui grid">
+            <div class="eight wide column">
+                <h1 class="ui header">Welkom bij Vakantiepark X</h1>
+                <p>
+                    Ontdek de wereld van Vakantiepark X om aan de dagelijkse sleur te ontsnappen. 
+                    Geniet van uw accommodatie midden in de natuur met prachtige bossen en meren. 
+                    Haal alles uit de tijd met uw gezin door een bezoek te brengen aan ons tropishe zwembad! 
+                    Of onze arcade of bowlingbaan!
+                    Er is zeer veel te beleven!
+                </p>
+                <div class="ui bulleted list">
+                    <div class="item">32 kilometer van Delft</div>
+                    <div class="item">10 minuten van TGV station Delft</div>
+                    <div class="item">30 minuten van Het strand</div>
+                    <div class="item">6 kilometer van Den Hoorn</div>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <img class="ui fluid rounded image" src="images/Verblijf/Huisje/roompot-breeduyn-village.jpg" >
+            </div>
         </div>
     </div>
+
+    <style>
+        body > div {
+            margin-left: 4em;
+            margin-right: 4em;
+            padding: 3em 8em;
+            background: url("images/dots.jpg"); 
+        }
+
+        body > div {
+            font-size: 16px;
+        }
+    </style>
 </body>
 </html>
