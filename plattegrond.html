@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vakantiepark X</title>
+    <title>Vakantiepark X Plattegrond</title>
     <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
     <script src="jquery-3.6.0.min.js"></script>
     <script src="semantic/semantic.min.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
 </head>
 <body>
-    <div class="ui container">
-        <h1 class="ui header">Vakantiepark X</h1>
-        <div class="ui piled segment">
-            <h4 class="ui header">Plattegrond</h4>
-            <img>
-        </div>
+    <nav-header page="7"></nav-header>
+
+    <div>
+        <h1 class="ui header">Vakantiepark X Plattegrond</h1>
+        <img class="ui fluid ronded image" src="images/plattegrond.png">
     </div>
+
+    <page-footer></page-footer>
+
+    <style>
+        body > div {
+            margin-left: 4em;
+            margin-right: 4em;
+            padding: 3em 8em;
+            background: url("images/dots.jpg"); 
+        }
+
+        body > div > h1 {
+            margin-bottom: 1em !important;
+        }
+    </style>
+
+    <script src="components/translation.js">
+        //var current = 
+        //document.getElementById("translation")
+    </script>
 </body>
 </html>
