@@ -7,8 +7,8 @@ headerTemplate.innerHTML = `
         <div class="content">Vakantiepark X</div>
     </h2>
     <div id="translation" class="ui right floated tiny buttons">
-        <button class="ui button positive active">NL</button>
-        <button class="ui button">EN</button>
+        <button class="ui button positive active" onclick="SetLanguageCookie('nl')">NL</button>
+        <button class="ui button" onclick="SetLanguageCookie('en')">EN</button>
     </div>
     <img class="ui fluid rounded image" src="images/banner1_crop.png">
     <nav class="ui horizontal bulleted link large list">
@@ -43,18 +43,38 @@ headerTemplate.innerHTML = `
 </style>
 `;
 
+headerTranslations = [
+    { sel: "#nav_0", type: "text", nl: "Overzicht", en: "Overview" },
+    { sel: "#nav_1", type: "text", nl: "Accommodatie", en: "Accommodation" },
+    { sel: "#nav_2", type: "text", nl: "Faciliteiten", en: "Facilities" },
+    { sel: "#nav_3", type: "text", nl: "Activiteiten", en: "Activities" },
+    { sel: "#nav_4", type: "text", nl: "Restaurants & Shops", en: "Restaurants & Shops" },
+    { sel: "#nav_5", type: "text", nl: "Trips", en: "Trips" },
+    { sel: "#nav_6", type: "text", nl: "Prijzen", en: "Pricelist" },
+    { sel: "#nav_7", type: "text", nl: "Plattegrond", en: "Map" }
+];
+
 class NavHeader extends HTMLElement {
+    shadow;
+
     constructor() {
         super();
     }
-  
+
     connectedCallback() {
         const semantic = document.querySelector('link[href*="semantic"]');
-        const shadowRoot = this.attachShadow({ mode: 'closed' });
-        shadowRoot.appendChild(headerTemplate.content);
-        shadowRoot.getElementById("nav_" + this.getAttribute("page")).classList.add("active");
-        if (semantic) shadowRoot.appendChild(semantic.cloneNode());
+        this.shadow = this.attachShadow({ mode: 'closed' });
+        this.shadow.appendChild(document.importNode(headerTemplate.content, true));
+        this.shadow.getElementById("nav_" + this.getAttribute("page")).classList.add("active");
+        if (semantic) this.shadow.appendChild(semantic.cloneNode());
     }
-  }
+
+    setTranslation() {
+        var isDutch = lang == "nl";
+        this.shadow.getElementById("translation").firstElementChild.className = isDutch ? "ui button positive active" : "ui button";
+        this.shadow.getElementById("translation").lastElementChild.className = isDutch ? "ui button" : "ui button positive active";
+        TranslatePage(this.shadow, headerTranslations);
+    }
+}
   
-  customElements.define('nav-header', NavHeader);
+customElements.define('nav-header', NavHeader);

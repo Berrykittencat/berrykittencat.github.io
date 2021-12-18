@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,18 +7,19 @@
     <title>Vakantiepark X</title>
     <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
     <script src="jquery-3.6.0.min.js"></script>
+    <script src="components/translation.js"></script>
     <script src="semantic/semantic.min.js"></script>
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
 </head>
 <body>
-    <nav-header page="0"></nav-header>
+    <nav-header id="header" page="0"></nav-header>
 
     <div>
         <div class="ui grid">
             <div class="nine wide column">
-                <h1 class="ui header">Welkom bij Vakantiepark X</h1>
-                <p>
+                <h1 id="page_title" class="ui header">Welkom bij Vakantiepark X</h1>
+                <p id="page_msg">
                     Ontdek de wereld van Vakantiepark X om aan de dagelijkse sleur te ontsnappen. 
                     Geniet van uw accommodatie midden in de natuur met prachtige bossen en meren. 
                     Haal alles uit de tijd met uw gezin door een bezoek te brengen aan ons tropishe zwembad! 
@@ -26,10 +27,10 @@
                     Er is zeer veel te beleven!
                 </p>
                 <div class="ui bulleted list">
-                    <div class="item">32 kilometer van Delft</div>
-                    <div class="item">10 minuten van TGV station Delft</div>
-                    <div class="item">30 minuten van Het strand</div>
-                    <div class="item">6 kilometer van Den Hoorn</div>
+                    <div id="info_0" class="item">32 kilometer van Delft</div>
+                    <div id="info_1" class="item">10 minuten van TGV station Delft</div>
+                    <div id="info_2" class="item">30 minuten van Het strand</div>
+                    <div id="info_3" class="item">6 kilometer van Den Hoorn</div>
                 </div>
             </div>
             <div class="one wide column"></div>
@@ -39,7 +40,7 @@
         </div>
     </div>
 
-    <page-footer></page-footer>
+    <page-footer id="footer"></page-footer>
 
     <style>
         body > div {
@@ -54,6 +55,26 @@
         }
     </style>
 
-    <script src="components/translation.js"></script>
+    <script>
+        var pageDictionary = [
+            { sel: "#header", type: "comp" }, { sel: "#footer", type: "comp" },
+            { sel: "#page_title", type:"text", nl: "Welkom bij Vakantiepark X", en: "Welcome at Vakantiepark X" },
+            { sel: "#page_msg", type: "text", nl: "Ontdek de wereld van Vakantiepark X om aan de dagelijkse sleur te ontsnappen. \
+                    Geniet van uw accommodatie midden in de natuur met prachtige bossen en meren. \
+                    Haal alles uit de tijd met uw gezin door een bezoek te brengen aan ons tropishe zwembad! \
+                    Of onze arcade of bowlingbaan! \
+                    Er is zeer veel te beleven!", en: "Discover the world of Holiday Park X to escape the daily grind. \
+                    Enjoy your accommodation in the middle of nature with beautiful forests and lakes. \
+                    Make the most of the time with your family by visiting our tropical pool! \
+                    Or our arcade or bowling alley! \
+                    There is a lot to experience for everybody!" },
+            { sel: "#info_0", type:"text", nl: "32 kilometer van Delft", en: "32 kilometer away from the city Delft" },
+            { sel: "#info_1", type:"text", nl: "10 minuten van TGV station Delft", en: "10 minuten away from centraal station Delft " },
+            { sel: "#info_2", type:"text", nl: "30 minuten van Het strand", en: "30 minuten away from the beach " },
+            { sel: "#info_3", type:"text", nl: "6 kilometer van Den Hoorn", en: "6 kilometer away from the village Den Hoorn " },
+        ];
+
+        InitTranslation();
+    </script>
 </body>
 </html>

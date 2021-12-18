@@ -7,15 +7,16 @@
     <title>Vakantiepark X Huisjes en Hutjes</title>
     <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
     <script src="jquery-3.6.0.min.js"></script>
+    <script src="components/translation.js"></script>
     <script src="semantic/semantic.min.js"></script>
     <script src="components/header.js"></script>
     <script src="components/footer.js"></script>
 </head>
 <body>
-    <nav-header page="1"></nav-header>
+    <nav-header id="header" page="1"></nav-header>
 
     <div>
-        <h1 class="ui header">Vakantiepark X Huisjes en Hutjes</h1>
+        <h1 id="page_title" class="ui header">Vakantiepark X Huisjes en Hutjes</h1>
         <div class="ui stackable four column grid">
             <div class="eight wide column">
                 <div class="ui segment">
@@ -24,13 +25,13 @@
                             <img class="ui fluid rounded image" src="images/Verblijf/Hutje/cute-cottage-3.jpg">
                         </div>
                         <div class="eight wide column">
-                            <h2 class="ui header">Bloem Hut</h2>
-                            <p><i class="ui users icon"></i>8 pers. <i class="ui bed icon"></i>4 Slaapkamers</p>
+                            <h2 id="cabin_0" class="ui header">Bloem Hut</h2>
+                            <p class="pers8"><i class="ui users icon"></i>8 pers. <i class="ui bed icon"></i>4 Slaapkamers</p>
                             <div class="ui bulleted list">
-                                <div class="ui item">Badkamer</div>
-                                <div class="ui item">Wi-Fi</div>
-                                <div class="ui item">Dicht bij het bos gelegen</div>
-                                <div class="ui item">Ingerichte keuken en woonkamer</div>
+                                <div class="ui item bathroom">Badkamer</div>
+                                <div class="ui item wifi">Wi-Fi</div>
+                                <div class="ui item forest">Dicht bij het bos gelegen</div>
+                                <div class="ui item kitchen">Ingerichte keuken en woonkamer</div>
                             </div>
                         </div>
                     </div>
@@ -43,14 +44,14 @@
                             <img class="ui fluid rounded image" src="images/Verblijf/Hutje/71113fdf-8a0d-4b4a-bb91-60bdecc36b10.jpg">
                         </div>
                         <div class="eight wide column">
-                            <h2 class="ui header">Twijg Hut</h2>
-                            <p><i class="ui users icon"></i>2 pers. <i class="ui bed icon"></i>1 Slaapkamer</p>
+                            <h2 id="cabin_1" class="ui header">Twijg Hut</h2>
+                            <p class="pers2"><i class="ui users icon"></i>2 pers. <i class="ui bed icon"></i>1 Slaapkamer</p>
                             <div class="ui bulleted list">
-                                <div class="ui item">Wi-Fi</div>
-                                <div class="ui item">Houten terras</div>
-                                <div class="ui item">Badkamer</div>
-                                <div class="ui item">Dicht bij het bos gelegen</div>
-                                <div class="ui item">Ingerichte keuken en woonkamer</div>
+                                <div class="ui item wifi">Wi-Fi</div>
+                                <div class="ui item woodenterrace">Houten terras</div>
+                                <div class="ui item bathroom">Badkamer</div>
+                                <div class="ui item forest">Dicht bij het bos gelegen</div>
+                                <div class="ui item kitchen">Ingerichte keuken en woonkamer</div>
                             </div>
                         </div>
                     </div>
@@ -63,14 +64,14 @@
                             <img class="ui fluid rounded image" src="images/Verblijf/Hutje/71113fdf-8a0d-4b4a-bb91-60bdecc36b10.jpg">
                         </div>
                         <div class="eight wide column">
-                            <h2 class="ui header">Blad Cabin</h2>
-                            <p><i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Slaapkamers</p>
+                            <h2 id="cabin_2" class="ui header">Blad Hut</h2>
+                            <p class="pers4"><i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Slaapkamers</p>
                             <div class="ui bulleted list">
-                                <div class="ui item">Wi-Fi</div>
-                                <div class="ui item">Houten terras</div>
-                                <div class="ui item">Badkamer</div>
-                                <div class="ui item">Dicht bij het bos gelegen</div>
-                                <div class="ui item">Ingerichte keuken en woonkamer</div>
+                                <div class="ui item wifi">Wi-Fi</div>
+                                <div class="ui item woodenterrace">Houten terras</div>
+                                <div class="ui item bathroom">Badkamer</div>
+                                <div class="ui item forest">Dicht bij het bos gelegen</div>
+                                <div class="ui item kitchen">Ingerichte keuken en woonkamer</div>
                             </div>
                         </div>
                     </div>
@@ -83,14 +84,14 @@
                             <img class="ui fluid rounded image" src="images/Verblijf/Huisje/194182754.jpg">
                         </div>
                         <div class="eight wide column">
-                            <h2 class="ui header">Moonbow Cottage</h2>
-                            <p><i class="ui users icon"></i>2 pers. <i class="ui bed icon"></i>1 Slaapkamer</p>
+                            <h2 id="cottage_0" class="ui header">Moonbow Cottage</h2>
+                            <p class="pers2"><i class="ui users icon"></i>2 pers. <i class="ui bed icon"></i>1 Slaapkamer</p>
                             <div class="ui bulleted list">
-                                <div class="ui item">Wi-Fi</div>
-                                <div class="ui item">Verhard terras</div>
-                                <div class="ui item">Badkamer bubbelbad en douche</div>
-                                <div class="ui item">Ingerichte keuken en woonkamer</div>
-                                <div class="ui item">Dicht bij de ingang van het park</div>
+                                <div class="ui item wifi">Wi-Fi</div>
+                                <div class="ui item terrace">Verhard terras</div>
+                                <div class="ui item hottub">Badkamer bubbelbad en douche</div>
+                                <div class="ui item kitchen">Ingerichte keuken en woonkamer</div>
+                                <div class="ui item entry">Dicht bij de ingang van het park</div>
                             </div>
                         </div>
                     </div>
@@ -103,14 +104,14 @@
                             <img class="ui fluid rounded image" src="images/Verblijf/Huisje/3027000777000003882.jpg">
                         </div>
                         <div class="eight wide column">
-                            <h2 class="ui header">Cozy-Glow Cottage</h2>
-                            <p><i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Slaapkamers</p>
+                            <h2 id="cottage_1" class="ui header">Cozy-Glow Cottage</h2>
+                            <p class="pers4"><i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Slaapkamers</p>
                             <div class="ui bulleted list">
-                                <div class="ui item">Wi-Fi</div>
-                                <div class="ui item">Verhard terras</div>
-                                <div class="ui item">Badkamer bubbelbad en douche</div>
-                                <div class="ui item">Ingerichte keuken en woonkamer</div>
-                                <div class="ui item">Dicht bij het zwembad</div>
+                                <div class="ui item wifi">Wi-Fi</div>
+                                <div class="ui item terrace">Verhard terras</div>
+                                <div class="ui item hottub">Badkamer bubbelbad en douche</div>
+                                <div class="ui item kitchen">Ingerichte keuken en woonkamer</div>
+                                <div class="ui item pool">Dicht bij het zwembad</div>
                             </div>
                         </div>
                     </div>
@@ -123,14 +124,14 @@
                             <img class="ui fluid rounded image" src="images/Verblijf/Huisje/3027000777000003882.jpg">
                         </div>
                         <div class="eight wide column">
-                            <h2 class="ui header">Rainbow Cottage</h2>
-                            <p><i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Slaapkamers</p>
+                            <h2 id="cottage_2" class="ui header">Rainbow Cottage</h2>
+                            <p class="pers4"><i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Slaapkamers</p>
                             <div class="ui bulleted list">
-                                <div class="ui item">Wi-Fi</div>
-                                <div class="ui item">Verhard terras</div>
-                                <div class="ui item">Badkamer bubbelbad en douche</div>
-                                <div class="ui item">Ingerichte keuken en woonkamer</div>
-                                <div class="ui item">Dicht bij het zwembad</div>
+                                <div class="ui item wifi">Wi-Fi</div>
+                                <div class="ui item terrace">Verhard terras</div>
+                                <div class="ui item hottub">Badkamer bubbelbad en douche</div>
+                                <div class="ui item kitchen">Ingerichte keuken en woonkamer</div>
+                                <div class="ui item pool">Dicht bij het zwembad</div>
                             </div>
                         </div>
                     </div>
@@ -143,14 +144,14 @@
                             <img class="ui fluid rounded image" src="images/Verblijf/Huisje/kindervilla-luxe-6-belgie-west-vlaanderen-6-personen.jpg">
                         </div>
                         <div class="eight wide column">
-                            <h2 class="ui header">Rarity Cottage</h2>
-                            <p><i class="ui users icon"></i>8 pers. <i class="ui bed icon"></i>4 Slaapkamers</p>
+                            <h2 id="cottage_3" class="ui header">Rarity Cottage</h2>
+                            <p class="pers8"><i class="ui users icon"></i>8 pers. <i class="ui bed icon"></i>4 Slaapkamers</p>
                             <div class="ui bulleted list">
-                                <div class="ui item">Wi-Fi</div>
-                                <div class="ui item">Verhard terras</div>
-                                <div class="ui item">Badkamer bubbelbad en douche</div>
-                                <div class="ui item">Ingerichte keuken en woonkamer</div>
-                                <div class="ui item">Dicht bij het bos</div>
+                                <div class="ui item wifi">Wi-Fi</div>
+                                <div class="ui item terrace">Verhard terras</div>
+                                <div class="ui item hottub">Badkamer bubbelbad en douche</div>
+                                <div class="ui item kitchen">Ingerichte keuken en woonkamer</div>
+                                <div class="ui item forest">Dicht bij het bos</div>
                             </div>
                         </div>
                     </div>
@@ -159,7 +160,7 @@
         </div>
     </div>
 
-    <page-footer></page-footer>
+    <page-footer id="footer"></page-footer>
 
     <style>
         body > div {
@@ -183,5 +184,33 @@
             width: auto;
         }
     </style>
+
+    <script>
+        var pageDictionary = [
+            { sel: "#header", type: "comp" }, { sel: "#footer", type: "comp" },
+            { sel: "#page_title", type:"text", nl: "Vakantiepark X Huisjes en Hutjes", en: "Vakantiepark X Cottages en Cabins" },
+            { sel: "#cabin_0", type: "text", nl: "Bloem Hut", en: "Flower Cabin" },
+            { sel: "#cabin_1", type: "text", nl: "Twijg Hut", en: "Twig Cabin" },
+            { sel: "#cabin_2", type: "text", nl: "Blad Hut", en: "Leaf Cabin" },
+            { sel: "#cottage_0", type: "text", nl: "Moonbow Cottage", en: "Moonbow Cottage" },
+            { sel: "#cottage_1", type: "text", nl: "Cozy-Glow Cottage", en: "Cozy-Glow Cottage" },
+            { sel: "#cottage_2", type: "text", nl: "Rainbow Cottage", en: "Rainbow Cottage" },
+            { sel: "#cottage_3", type: "text", nl: "Rarity Cottage", en: "Rarity Cottage" },
+            { sel: ".pers2", type: "html", nl: `<i class="ui users icon"></i>2 pers. <i class="ui bed icon"></i>1 Slaapkamer`, en: `<i class="ui users icon"></i>2 pers. <i class="ui bed icon"></i>1 Bedroom` },
+            { sel: ".pers4", type: "html", nl: `<i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Slaapkamers`, en: `<i class="ui users icon"></i>4 pers. <i class="ui bed icon"></i>2 Bedrooms` },
+            { sel: ".pers8", type: "html", nl: `<i class="ui users icon"></i>8 pers. <i class="ui bed icon"></i>4 Slaapkamers`, en: `<i class="ui users icon"></i>8 pers. <i class="ui bed icon"></i>4 Bedrooms` },
+            { sel: ".wifi", type: "text", nl: "Wi-Fi", en: "Wifi" },
+            { sel: ".bathroom", type: "text", nl: "Badkamer", en: "Bathroom" },
+            { sel: ".hottub", type: "text", nl: "Badkamer bubbelbad en douche", en: "Bathroom with a bubble bath and shower" },
+            { sel: ".kitchen", type: "text", nl: "Ingerichte keuken en woonkamer", en: "Furnished kitchen and living room" },
+            { sel: ".forest", type: "text", nl: "Dicht bij het bos gelegen", en: "Located close to the forest" },
+            { sel: ".entry", type: "text", nl: "Dicht bij de ingang van het park", en: "Located close to the entrance" },
+            { sel: ".pool", type: "text", nl: "Dicht bij het zwembad", en: "Located close to the pool" },
+            { sel: ".terrace", type: "text", nl: "Verhard terras", en: "Terrace" },
+            { sel: ".woodenterrace", type: "text", nl: "Houten terras", en: "Wooden Terrace" },
+        ];
+
+        InitTranslation();
+    </script>
 </body>
 </html>
