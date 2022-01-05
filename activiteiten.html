@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vakantiepark X</title>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="components/translation.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body>
+    <nav-header id="header" page="3"></nav-header>
+
+    <div>
+        <h1 id="page_title" class="ui header">Activiteiten</h1>
+    </div>
+
+    <page-footer id="footer"></page-footer>
+
+    <style>
+        body > div {
+            margin-left: 4em;
+            margin-right: 4em;
+            padding: 3em 8em;
+            background: url("images/dots.jpg"); 
+        }
+
+        body > div {
+            font-size: 16px;
+        }
+    </style>
+
+    <script>
+        var pageDictionary = [
+            { sel: "#header", type: "comp" }, { sel: "#footer", type: "comp" },
+            { sel: "#page_title", type:"text", nl: "Activiteiten", en: "Activities" },
+        ];
+
+        InitTranslation();
+    </script>
+</body>
+</html>

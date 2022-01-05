@@ -7,18 +7,18 @@ headerTemplate.innerHTML = `
         <div class="content">Vakantiepark X</div>
     </h2>
     <div id="translation" class="ui right floated tiny buttons">
-        <button class="ui button positive active" onclick="SetLanguageCookie('nl')">NL</button>
+        <button class="ui button pink active" onclick="SetLanguageCookie('nl')">NL</button>
         <button class="ui button" onclick="SetLanguageCookie('en')">EN</button>
     </div>
     <img class="ui fluid rounded image" src="images/banner1_crop.png">
     <nav class="ui horizontal bulleted link large list">
         <a id="nav_0" class="item" href="index.html">Overzicht</a>
         <a id="nav_1" class="item" href="accommodatie.html">Accommodatie</a>
-        <a id="nav_2" class="item" href="index.html">Faciliteiten</a>
-        <a id="nav_3" class="item" href="index.html">Activiteiten</a>
-        <a id="nav_4" class="item" href="index.html">Restaurants & Shops</a>
-        <a id="nav_5" class="item" href="index.html">Trips</a>
-        <a id="nav_6" class="item" href="index.html">Prijzen</a>
+        <a id="nav_2" class="item" href="faciliteiten.html">Faciliteiten</a>
+        <a id="nav_3" class="item" href="activiteiten.html">Activiteiten</a>
+        <a id="nav_4" class="item" href="restaurants.html">Restaurants & Shops</a>
+        <a id="nav_5" class="item" href="trips.html">Trips</a>
+        <a id="nav_6" class="item" href="prijzen.html">Prijzen</a>
         <a id="nav_7" class="item" href="plattegrond.html">Plattegrond</a>
     </nav>
 </header>
@@ -71,8 +71,8 @@ class NavHeader extends HTMLElement {
 
     setTranslation() {
         var isDutch = lang == "nl";
-        this.shadow.getElementById("translation").firstElementChild.className = isDutch ? "ui button positive active" : "ui button";
-        this.shadow.getElementById("translation").lastElementChild.className = isDutch ? "ui button" : "ui button positive active";
+        this.shadow.getElementById("translation").firstElementChild.className = isDutch ? "ui button pink active" : "ui button";
+        this.shadow.getElementById("translation").lastElementChild.className = isDutch ? "ui button" : "ui button pink active";
         TranslatePage(this.shadow, headerTranslations);
     }
 }

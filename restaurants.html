@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vakantiepark X</title>
+    <link rel="stylesheet" type="text/css" href="semantic/semantic.min.css">
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="components/translation.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <script src="components/header.js"></script>
+    <script src="components/footer.js"></script>
+</head>
+<body>
+    <nav-header id="header" page="4"></nav-header>
+
+    <div>
+        <h1 id="page_title" class="ui header">Vakantiepark X - Restaurants & Shops</h1>
+        <h2 id="Restaurants" class="ui dividing header">Restaurants</h2>
+
+        <div class="ui stackable four column grid">
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Restaurant/Starbucks/170-gerai_starbucks_coffee.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Starbucks</a>
+                        <div id="starbucks_time" class="meta">Open van 7u30 tot 15u00</div>
+                        <div class="description"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Restaurant/Italiaan/italiaanseten.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Italiaania (Pizza & Pasta)</a>
+                        <div id="italian_time" class="meta">Open van 15u00 tot 23u00</div>
+                        <div id="italian_desc" class="description">Menu: 
+                            Pizza (toppings naar keuzen) 
+                            Pasta met tomatensaus 
+                            Pasta met kaassaus 
+                            Pasta zonder saus 
+                            Met de keuze uit: 
+                            Rode wijn 
+                            Witte wijn 
+                            Ice tea</div>
+                    </div>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Restaurant/Wereldkeuken/wereldkeuken.jpg">
+                    </div>
+                    <div class="content">
+                        <a id="wereldkeuken" class="header">Wereldkeuken</a>
+                        <div id="wereldkeuken_time" class="meta">Open van 16u30 tot 22u30</div>
+                        <div class="description">Wok, Sushi & KBBQ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Restaurant/Coctail bar/cocktailrecepten-thuis-cocktailbar.jpeg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Coctailbar</a>
+                        <div id="coctail_time" class="meta">Open van 19u00 tot 23u30</div>
+                        <div class="description"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Restaurant/Caffee/jan-cornelius-caffee.jpg">
+                    </div>
+                    <div class="content">
+                        <a class="header">Café de Beren</a>
+                        <div id="cafe_time" class="meta">Open van 11u00 tot 16u00</div>
+                        <div id="cafe_desc" class="description">De perfecte lunchgelegenheid!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 id="shops" class="ui dividing header">Winkels</h2>
+
+        <div class="ui stackable four column grid">
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Restaurant/Bakkerij/MG_1258.jpg">
+                    </div>
+                    <div class="content">
+                        <a id="bakker" class="header">Bakker</a>
+                        <div id="bakker_time" class="meta">Open van 8u00 tot 14u00</div>
+                        <div class="description"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Supermarkt/winkelwagen-supermarkt.jpg">
+                    </div>
+                    <div class="content">
+                        <a id="supermarkt" class="header">Supermarkt</a>
+                        <div id="supermarkt_time" class="meta">Open van 8u00 tot 22u00</div>
+                        <div class="description"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="eight wide column">
+                <div class="ui fluid link card">
+                    <div class="image">
+                        <img src="images/Souvenir/Klompenwand.jpg">
+                    </div>
+                    <div class="content">
+                        <a id="souvenir" class="header">Souvenir Winkel</a>
+                        <div id="souvenir_time" class="meta">Open van 8u00 tot 17u00</div>
+                        <div id="souvenir_desc" class="description">Op zondagen gesloten</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <page-footer id="footer"></page-footer>
+
+    <style>
+        body > div {
+            margin-left: 4em;
+            margin-right: 4em;
+            padding: 3em 8em;
+            background: url("images/dots.jpg"); 
+            font-size: 16px;
+        }
+
+        body > div > h1 {
+            text-align: center; 
+            margin-bottom: 1em !important;
+        }
+
+        body > div > h2 {
+            text-align: center; 
+            margin-bottom: 1em !important;
+        }
+
+        .ui.fluid.card {
+            height: 450px;
+        }
+
+        .ui.fluid.card > .image > img {
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+
+    <script>
+        var pageDictionary = [
+            { sel: "#header", type: "comp" }, { sel: "#footer", type: "comp" },
+            { sel: "#page_title", type:"text", nl: "Vakantiepark X - Restaurants & Winkels", en: "Vakantiepark X - Restaurants & Shops" },
+            { sel: "#shops", type:"text", nl: "Winkels", en: "Shops" },
+
+            { sel: "#wereldkeuken", type:"text", nl: "Wereldkeuken", en: "World Cuisine" },
+
+            { sel: "#starbucks_time", type:"text", nl: "Open van 7u30 tot 15u00", en: "Open from 7:30 AM to 3:00 PM" },
+            { sel: "#italian_time", type:"text", nl: "Open van 15u00 tot 23u00", en: "Open from 3:00 PM to 11:00 PM" },
+            { sel: "#wereldkeuken_time", type:"text", nl: "Open van 16u30 tot 22u30", en: "Open from 4:30 PM to 10:30 PM" },
+            { sel: "#coctail_time", type:"text", nl: "Open van 19u00 tot 23u30", en: "Open van 7:00 PM tot 11:30 PM" },
+            { sel: "#cafe_time", type:"text", nl: "Open van 11u00 tot 16u00", en: "Open from 11:00 AM to 4:00 PM" },
+
+            { sel: "#italian_desc", type:"text", 
+                nl: "Menu: Pizza (toppings naar keuzen), Pasta met tomatensaus, Pasta met kaassaus, Pasta zonder saus. Met de keuze uit: Rode wijn, Witte wijn, Ice tea ", 
+                en: "Menu: Pizza (toppings of your choice), Pasta with tomato sauce, Pasta with cheese sauce, Pasta without sauce. With the choice of: Red wine, White wine, Iced tea" },
+            { sel: "#cafe_desc", type:"text", nl: "De perfecte lunchgelegenheid!", en: "The perfect lunch opportunity!" },
+
+            { sel: "#bakker", type:"text", nl: "Bakker", en: "Bakery" },
+            { sel: "#supermarkt", type:"text", nl: "Supermarkt", en: "Convenience Store" },
+            { sel: "#souvenir", type:"text", nl: "Souvenir Winkel", en: "Souvenir Shop" },
+
+            { sel: "#bakker_time", type:"text", nl: "Open van 8u00 tot 14u00", en: "Open from 8:00 AM to 2:00 PM" },
+            { sel: "#supermarkt_time", type:"text", nl: "Open van 8u00 tot 22u00", en: "Open from 8:00 AM to 10:u00 PM" },
+            { sel: "#souvenir_time", type:"text", nl: "Open van 8u00 tot 17u00", en: "Open van 8:00 AM tot 5:00 PM" },
+
+            { sel: "#souvenir_desc", type:"text", nl: "Op zondagen gesloten", en: "Closed on Sundays" },
+        ];
+
+        InitTranslation();
+    </script>
+</body>
+</html>
