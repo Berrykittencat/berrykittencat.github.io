@@ -16,7 +16,76 @@
     <nav-header id="header" page="5"></nav-header>
 
     <div>
-        <h1 id="page_title" class="ui header">Trips</h1>
+        <h1 id="page_title" class="ui header">Te doen in de omgeving van het park</h1>
+        
+        <h3 id="before">Ons park is 32 kilometer verwijderd van de prachtige stad Delft waar ook zeer veel te beleven is. Hier zijn een aantal van die opties:</h3>
+
+        <div class="ui segment">
+            <div class="ui grid">
+                <div class="seven wide column">
+                    <img class="ui fluid image" src="images/delft/Royal Delft - Koninklijke Porceleyne Fles/08.jpg">
+                </div>
+                <div class="eight wide column">
+                    <h2 id="fles" class="ui header">Royal Delft - Koninklijke Porceleyne Fles</h2>
+                    <div id="fles_desc">De Koninklijke Porceleyne Fles, is de laatste overgebleven Delfts aardewerkfabriek uit de 17e eeuw. Bezoek Royal Delft en zie hoe ze hier nog steeds op een authentieke wijze produceren!</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui grid">
+                <div class="seven wide column">
+                    <img class="ui fluid image" src="images/delft/Nieuwe Kerk/56050_fullimage_oude_en_nieuwe_kerk_in_delft_818x512.jpg">
+                </div>
+                <div class="eight wide column">
+                    <h2 id="kerk" class="ui header">Nieuwe Kerk</h2>
+                    <div id="kerk_desc">Midden op de Markt in Delft vindt u de Nieuwe Kerk. Deze kerk stamt uit het jaar 1300 en is bekend vanwege het praalgraf van Willem van Oranje en koninklijke grafkelder waar de meeste leden van de Nederlandse Koninklijke Familie worden bijgezet.</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui grid">
+                <div class="seven wide column">
+                    <img class="ui fluid image" src="images/delft/Museum Prinsenhof Delft/Museum-Prinsenhof-Delft-01.jpg">
+                </div>
+                <div class="eight wide column">
+                    <h2 id="museum" class="ui header">Museum Prinsenhof Delft</h2>
+                    <div id="museum_desc">Nederland ontdek je in Delft. In Museum Prinsenhof Delft, een uniek monumentaal gebouw en voormalig Hof van Willem van Oranje, beleef je de Nederlandse geschiedenis.</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui grid">
+                <div class="seven wide column">
+                    <img class="ui fluid image" src="images/delft/Vermeer Centrum Delft/2010-05-15-delft-by-RalfR-13.jpg">
+                </div>
+                <div class="eight wide column">
+                    <h2 id="centrum" class="ui header">Vermeer Centrum Delft</h2>
+                    <div id="centrum_desc">Het Vermeer Centrum Delft biedt een ontdekkingstocht door het leven, het werk en de stad van de 17de-eeuwse meester van het licht: Johannes Vermeer.</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui grid">
+                <div class="seven wide column">
+                    <img class="ui fluid image" src="images/Strand/optimized.jpg">
+                </div>
+                <div class="eight wide column">
+                    <h2 id="zee" class="ui header">Zee</h2>
+                    <div id="zee_desc">30 minuten rijden naar het strand</div>
+                </div>
+            </div>
+        </div>
+        <div class="ui segment">
+            <div class="ui grid">
+                <div class="seven wide column">
+                    <img class="ui fluid image" src="images/Den hoorn/Den-Hoorn-op-Texel_VVV-Texel.jpg">
+                </div>
+                <div class="eight wide column">
+                    <h2 id="hoorn" class="ui header">Den Hoorn</h2>
+                    <div id="hoorn_desc">6 kilometer weg van het dorp Den Hoorn</div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <page-footer id="footer"></page-footer>
@@ -29,15 +98,44 @@
             background: url("images/dots.jpg"); 
         }
 
-        body > div {
-            font-size: 16px;
+        body > div > h1 {
+            text-align: center; 
+            margin-bottom: 1em !important;
+        }
+
+        .ui.fluid.image {
+            object-fit: cover;
+        }
+
+        body > div > .ui.segment {
+            height: 270px;
+        }
+
+        body > div > .ui.segment > div > div:first-of-type {
+            padding: 0 !important;
+        }
+
+        body > div > .ui.segment > div > div > img {
+            height: 270px !important;
+            width: auto;
         }
     </style>
 
     <script>
         var pageDictionary = [
             { sel: "#header", type: "comp" }, { sel: "#footer", type: "comp" },
-            { sel: "#page_title", type:"text", nl: "Trips", en: "Trips" },
+            { sel: "#page_title", type:"text", nl: "Te doen in de omgeving van het park:", en: "To do in the vicinity of the park:" },
+
+            { sel: "#before", type:"text", nl: "Ons park is 32 kilometer verwijderd van de prachtige stad Delft waar ook zeer veel te beleven is. Hier zijn een aantal van die opties:", 
+                                            en: "Our park is 32 kilometers away from the beautiful city of Delft, where there is also a lot to experience. Here are some of those options:" },
+
+            { sel: "#zee", type:"text", nl: "Zee", en: "Ocean" },
+            { sel: "#fles_desc", type:"text", nl: "De Koninklijke Porceleyne Fles, is de laatste overgebleven Delfts aardewerkfabriek uit de 17e eeuw. Bezoek Royal Delft en zie hoe ze hier nog steeds op een authentieke wijze produceren!", en: "The Koninklijke Porceleyne Fles is the last remaining Delft pottery factory from the 17th century. Visit Royal Delft and see how they still produce here in an authentic way!" },
+            { sel: "#kerk_desc", type:"text", nl: "Midden op de Markt in Delft vindt u de Nieuwe Kerk. Deze kerk stamt uit het jaar 1300 en is bekend vanwege het praalgraf van Willem van Oranje en koninklijke grafkelder waar de meeste leden van de Nederlandse Koninklijke Familie worden bijgezet.", en: "In the middle of the Markt in Delft you will find the Nieuwe Kerk. This church dates from the year 1300 and is known for the mausoleum of William of Orange and the royal vault where most members of the Dutch Royal Family are buried." },
+            { sel: "#museum_desc", type:"text", nl: "Nederland ontdek je in Delft. In Museum Prinsenhof Delft, een uniek monumentaal gebouw en voormalig Hof van Willem van Oranje, beleef je de Nederlandse geschiedenis.", en: "You will discover the Netherlands in Delft. In Museum Prinsenhof Delft, a unique monumental building and former Court of William of Orange, you can experience Dutch history." },
+            { sel: "#centrum_desc", type:"text", nl: "Het Vermeer Centrum Delft biedt een ontdekkingstocht door het leven, het werk en de stad van de 17de-eeuwse meester van het licht: Johannes Vermeer.", en: "The Vermeer Center Delft offers a voyage of discovery through the life, work and city of the 17th-century master of light: Johannes Vermeer." },
+            { sel: "#zee_desc", type:"text", nl: "30 minuten rijden naar het strand", en: "Only a 30 minute drive to the beach" },
+            { sel: "#hoorn_desc", type:"text", nl: "6 kilometer weg van het dorp Den Hoorn", en: "6 kilometers away from the village of Den Hoorn" },
         ];
 
         InitTranslation();

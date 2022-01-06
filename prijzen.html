@@ -16,7 +16,101 @@
     <nav-header id="header" page="6"></nav-header>
 
     <div>
-        <h1 id="page_title" class="ui header">Prijzen</h1>
+        <h1 id="page_title" class="ui header">Prijslijst</h1>
+
+        <div id="before">Kom lekker op ons park verblijven! Maak uw boeking nu! Hier is de prijslijst, andere kosten zijn inbegrepen in de booking.</div>
+
+        <div class="ui relaxed divided list">
+            <div class="item">
+                <i class="large home middle aligned icon"></i>
+                <div class="content">
+                  <p id="cabin_1" class="header">Twijg Hut</p>
+                  <div class="description"><a class="ui tiny tag pink label n120">€120 per nacht</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large home middle aligned icon"></i>
+                <div class="content">
+                    <p id="cabin_2" class="header">Blad Hut</p>
+                  <div class="description"><a class="ui tiny tag pink label n140">€140 per nacht</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large home middle aligned icon"></i>
+                <div class="content">
+                    <p id="cabin_0"  class="header">Bloem Hut</p>
+                  <div class="description"><a class="ui tiny tag pink label n160">€160 per nacht</a></div>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <i class="large warehouse middle aligned icon"></i>
+                <div class="content">
+                    <p id="cottage_0" class="header">Moonbow Cottage</p>
+                  <div class="description"><a class="ui tiny tag pink label n100">€100 per nacht</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large warehouse middle aligned icon"></i>
+                <div class="content">
+                    <p id="cottage_1" class="header">Cozy-Glow Cottage</p>
+                  <div class="description"><a class="ui tiny tag pink label n150">€150 per nacht</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large warehouse middle aligned icon"></i>
+                <div class="content">
+                    <p id="cottage_2" class="header">Rainbow Cottage</p>
+                  <div class="description"><a class="ui tiny tag pink label n150">€150 per nacht</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large warehouse middle aligned icon"></i>
+                <div class="content">
+                    <p id="cottage_3" class="header">Rarity Cottage</p>
+                  <div class="description"><a class="ui tiny tag pink label n200">€200 per nacht</a></div>
+                </div>
+            </div>
+            
+            <div class="item">
+                <i class="large bookmark middle aligned icon"></i>
+                <div class="content">
+                    <p id="spa" class="header">1 dag Spa voor 5 uur</p>
+                  <div class="description"><a class="ui tiny tag pink label">€50</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large bookmark middle aligned icon"></i>
+                <div class="content">
+                    <p id="spa1" class="header">1u Spa</p>
+                  <div class="description"><a class="ui tiny tag pink label">€10</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large bookmark middle aligned icon"></i>
+                <div class="content">
+                    <p id="roei2" class="header">Roeiboot voor 2 personen</p>
+                  <div class="description"><a class="ui tiny tag pink label u10">€10 per uur</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large bookmark middle aligned icon"></i>
+                <div class="content">
+                    <p id="roei4" class="header">Roeiboot voor 4 personen</p>
+                  <div class="description"><a class="ui tiny tag pink label u20">€20 per uur</a></div>
+                </div>
+            </div>
+            <div class="item">
+                <i class="large bookmark middle aligned icon"></i>
+                <div class="content">
+                    <p id="zwaan" class="header">Zwanenboot</p>
+                  <div class="description"><a class="ui tiny tag pink label u20">€20 per uur</a></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="after">Meer vragen? U kunt alles op onze site terugvinden. Nog altijd iets onduidelijk? Neem gerust contact met ons op! Bellen is gratis.</div>
     </div>
 
     <page-footer id="footer"></page-footer>
@@ -27,9 +121,6 @@
             margin-right: 4em;
             padding: 3em 8em;
             background: url("images/dots.jpg"); 
-        }
-
-        body > div {
             font-size: 16px;
         }
     </style>
@@ -37,7 +128,35 @@
     <script>
         var pageDictionary = [
             { sel: "#header", type: "comp" }, { sel: "#footer", type: "comp" },
-            { sel: "#page_title", type:"text", nl: "Prijzen", en: "Prices" },
+            { sel: "#page_title", type:"text", nl: "Prijslijst", en: "Pricelist" },
+
+            { sel: "#cabin_0", type: "text", nl: "Bloem Hut", en: "Flower Cabin" },
+            { sel: "#cabin_1", type: "text", nl: "Twijg Hut", en: "Twig Cabin" },
+            { sel: "#cabin_2", type: "text", nl: "Blad Hut", en: "Leaf Cabin" },
+            { sel: "#cottage_0", type: "text", nl: "Moonbow Cottage", en: "Moonbow Cottage" },
+            { sel: "#cottage_1", type: "text", nl: "Cozy-Glow Cottage", en: "Cozy-Glow Cottage" },
+            { sel: "#cottage_2", type: "text", nl: "Rainbow Cottage", en: "Rainbow Cottage" },
+            { sel: "#cottage_3", type: "text", nl: "Rarity Cottage", en: "Rarity Cottage" },
+
+            { sel: "#spa", type: "text", nl: "1 dag Spa voor 5 uur", en: "1 day Spa for 5 hours" },
+            { sel: "#spa1", type: "text", nl: "1u Spa", en: "1h Spa" },
+            { sel: "#roei2", type: "text", nl: "Roeiboot voor 2 personen", en: "Rowing boat for 2 persons" },
+            { sel: "#roei4", type: "text", nl: "Roeiboot voor 4 personen", en: "Rowing boat for 4 persons" },
+            { sel: "#zwaan", type: "text", nl: "Zwanenboot", en: "Swan boat" },
+
+            { sel: ".n100", type: "text", nl: "€100 per nacht", en: "€100 per night" },
+            { sel: ".n120", type: "text", nl: "€120 per nacht", en: "€120 per night" },
+            { sel: ".n140", type: "text", nl: "€140 per nacht", en: "€140 per night" },
+            { sel: ".n150", type: "text", nl: "€150 per nacht", en: "€150 per night" },
+            { sel: ".n160", type: "text", nl: "€160 per nacht", en: "€160 per night" },
+            { sel: ".u10", type: "text", nl: "€10 per uur", en: "€10 per hour" },
+            { sel: ".u20", type: "text", nl: "€20 per uur", en: "€20 per hour" },
+            { sel: ".u50", type: "text", nl: "€50", en: "€50" },
+
+            { sel: "#before", type:"text", nl: "Kom lekker op ons park verblijven! Maak uw boeking nu! Hier is de prijslijst, andere kosten zijn inbegrepen in de booking.", 
+                                        en: "Come and stay at our park! Make your booking now! Here is the price list, the rest of the costs are included in your booking." },
+            { sel: "#after", type:"text", nl: "Meer vragen? U kunt alles op onze site terugvinden. Nog altijd iets onduidelijk? Neem gerust contact met ons op! Bellen is gratis.", 
+                                        en: "More questions? You can find everything on our site. Still something unclear? Feel free to contact us! Calling is free." },
         ];
 
         InitTranslation();
