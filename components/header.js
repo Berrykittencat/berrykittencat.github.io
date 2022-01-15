@@ -4,7 +4,7 @@ headerTemplate.innerHTML = `
 <header class="ui fluid raised segment">
     <h2 class="ui left floated header">
         <img class="ui image" src="images/logo.png">
-        <div class="content">Vakantiepark X</div>
+        <div class="content">Sunset Grove</div>
     </h2>
     <div id="translation" class="ui right floated tiny buttons">
         <button class="ui button pink active" onclick="SetLanguageCookie('nl')">NL</button>
